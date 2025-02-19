@@ -1,0 +1,10 @@
+{
+    "name": "Alan Bronze",
+    "age": 21,
+    "skill": ["Python", "JavaScript", "HTML", "CSS", "SQL"],
+    "address": {
+        "country": "Rwanda",
+        "city": "Kigali",
+        "street": "KG-202"
+    }
+}

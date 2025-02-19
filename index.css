@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container inside the header */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #839fac;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+header img{
+    height: 100pz;
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    
+}
+
+h2 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* Job and Project Details */
+.job, .project {
+    margin-bottom: 15px;
+}
+
+.job h3, .project h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Skills Section*/
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background: rgb(197, 142, 142);
+    color: white;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+/* Contact Section*/
+#contact p {
+    margin: 5px 0;
+}
+
+#contact a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #839fac;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 30em) {
+    body {
+        font-size: 14px;
+    }
+
+    .skills-list {
+        display: block;
+    }
+
+    .skills-list li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode section {
+    background: #333;
+}
+
+
