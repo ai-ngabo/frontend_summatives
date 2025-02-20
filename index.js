@@ -1,18 +1,15 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Dark Mode Toggle
-    const themeToggle = document.createElement("button");
-    themeToggle.class = "theme-toggle";
-    themeToggle.textContent = "🌙 Dark Mode";
-    document.querySelector("header .container").appendChild(themeToggle);
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll("nav ul li a");
 
-    themeToggle.addEventListener("click", function () {
-        document.body.classList.toggle("dark-mode");
-        if (document.body.classList.contains("dark-mode")) {
-            themeToggle.textContent = "☀️ Light Mode";
-        } else {
-            themeToggle.textContent = "🌙 Dark Mode";
-        }
+    navLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            const targetSection = document.querySelector(this.getAttribute("href"));
+            window.scrollTo({
+                top: targetSection.offsetTop - 50,
+                behavior: "smooth"
+            });
+        });
     });
-        
-    }
-);
+});
+
