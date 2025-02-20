@@ -1,84 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head></head>
+<!--This part is the head that contains the meta data and the webpage title-->
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alain's Resume</title>
+    <title>Alain Ishimwe Ngabo - Resume</title>
     <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
 </head>
+<!--Body to contain all the visible data on the webpage-->
 <body>
-    <header>
-        <div class="container">
-            <h1>Alain Ishimwe NGABO</h1>
-            <img src="profile.png" alt="profile">
-            <p>Software Engineer</p>
-            <nav>
-                <ul>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="container">
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="job">
-                <h3>Software Developer</h3>
-                <p><strong>Wholesale Store Kigali</strong> | 2024 - Present</p>
-                <ul>
-                    <li>Database management</li>
-                    <li>Optimized code for better performance and scalability.</li>
-                    <li>User Experience analyst.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <p><strong>African Leadership University</strong> | Bachelor's in Software Engineering | 2024 - 2027</p>
-            <p><strong>Gahogo Adventist Academy</strong> | Diploma in Maths, Economics and Computer Science | 2020 - 2024</p>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>HTML, CSS, JavaScript</li>
-                <li>Python, C++</li>
-                <li>SQL, MongoDB</li>
-                <li>Git, GitHub</li>
+<!--Header section with all data on the top of the webpage-->
+<header>
+    <div class="container">
+        <!--Here I want the Title to be Alain's profile-->
+        <div class="logo">Alain's profile</div>
+        <nav>
+            <!--The navigation section contains three links-->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Regular Expression Generator</h3>
-                <p>Generated Emails, Phone numbers, Bank card Numbers, emails, urls, Hashtags and HTML tags.</p>
-                <a href="https://github.com/ai-ngabo/alu_regex-data-extraction_ai-ngabo" target="_blank">View Project</a>
+        </nav>
+    </div>
+</header>
+<!--This is the home section-->
+<section id="home" class="home-section">
+    <div class="container">
+        <div class="profile">
+            <img src="pictures/a.png" alt="Profile Picture" class="profile-pic">
+            <div class="intro">
+                <h1>Hi, I'm Alain Ishimwe Ngabo</h1>
+                <p>A passionate Software Engineer specializing in web development, database management, and user experience design.</p>
             </div>
-            <div class="project">
-                <h3>Course Enrollment App</h3>
-                <p>A menu driven app to provide options to enroll in desired course based on someone's skills.</p>
-                <a href="https://github.com/N-SilverJr/Menu_Driven_application_Group21" target="_blank">View Project</a>
+        </div>
+    </div>
+</section>
+<!--Resume Section that contains my professional back-ground-->
+<section id="resume" class="resume-section">
+    <div class="container">
+        <h2>Resume</h2>
+        <div class="resume-content">
+            <div class="resume-section">
+                <h3>Experience</h3>
+                <div class="resume-item">
+                    <h4>Software Developer</h4>
+                    <p><em>Wholesale Store Kigali | 2024 - Present</em></p>
+                    <ul>
+                        <li>Database management and optimization</li>
+                        <li>Developing scalable applications</li>
+                    </ul>
+                </div>
             </div>
-        </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:a.ngabo@alustudent.com">a.ngabo@alustudent.com</a></p>
-            <p>Phone: +250 791 419 661</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/ngabo-alain" target="_blank">https://www.linkedin.com/in/ngabo-alain/</a></p>
-        </section>
-    </main>
+            <div class="resume-section">
+                <h3>Education</h3>
+                <div class="resume-item">
+                    <h4>Bachelor's in Software Engineering</h4>
+                    <p><em>African Leadership University | 2024 - 2027</em></p>
+                    <h4>High school Diploma</h4>
+                    <p><em>Gahogo Adventist Academy | 2020 -  2024</em></p>
+                </div>
+            </div>
 
-    <footer>
-        <p>&copy;2025 Alain Ngabo. Summatives</p>
-    </footer>
-    <script src="index.js"></script>
+            <div class="resume-section">
+                <h3>Skills</h3>
+                <ul class="skills-list">
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Python, C++</li>
+                    <li>SQL, MongoDB</li>
+                </ul>
+            </div>
+
+            <div class="resume-section">
+                <h3>Projects</h3>
+                <div class="resume-item">
+                    <h4>Regular Expression Generator</h4>
+                    <p>Automated regex generation for various inputs.</p>
+                    <p><a href="https://github.com/ai-ngabo/alu_regex-data-extraction_ai-ngabo">Project Link</a></p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:a.ngabo@alustudent.com">a.ngabo@alustudent.com</a></p>
+                <p>Phone: +250 791 419 661</p>
+                <p>Linkedin: <a href="www.linkedin.com/in/ngabo-alain">link</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--This is the footer part of the webpage-->
+<footer>
+    <p>&copy; 2025 Alain Ishimwe Ngabo</p>
+</footer>
 </body>
 </html>
