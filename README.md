@@ -1,1 +1,4 @@
-# frontend_summatives
+# Summatives project
+*HTML
+*CSS
+*JavaScript 
